@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainer Dashboard - TMS</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 15px;
+        }
+        .header {
+            background-color: #ffc107;
+            color: #333;
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+        }
+        h3 { 
+            margin-top: 0; 
+            color: #333; 
+            border-bottom: 2px solid #ffc107; 
+            padding-bottom: 5px; 
+        }
+        .student-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #e9ecef;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+        }
+        .btn-submit {
+            background-color: #007bff; color: white; border: none; padding: 10px; 
+            border-radius: 4px; font-size: 15px; width: 100%; margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h2>Trainer Dashboard</h2>
+        <p>Welcome, Suresh Kumar</p>
+    </div>
+
+    <!-- అటెండెన్స్ మార్క్ చేసే సెక్షన్ -->
+    <div class="card">
+        <h3>Mark Student Attendance</h3>
+        <p><strong>Course:</strong> Web Development</p>
+        <form>
+            <div class="student-row">
+                <span>1. Ramesh (Student)</span>
+                <select>
+                    <option value="present">Present</option>
+                    <option value="absent">Absent</option>
+                </select>
+            </div>
+            <div class="student-row">
+                <span>2. Divya (Student)</span>
+                <select>
+                    <option value="present">Present</option>
+                    <option value="absent">Absent</option>
+                </select>
+            </div>
+            <button type="button" class="btn-submit">Submit Attendance</button>
+        </form>
+    </div>
+
+</body>    <div style="text-align: center; margin-top: 20px;">
+        <button type="button" onclick="window.location.href='login.html'" style="background-color: #dc3545; max-width: 200px;">Logout</button>
+    </div>
+
+</html>

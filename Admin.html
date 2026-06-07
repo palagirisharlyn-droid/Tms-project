@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - TMS</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 15px;
+        }
+        .header {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+        }
+        h3 { 
+            margin-top: 0; 
+            color: #333; 
+            border-bottom: 2px solid #007bff; 
+            padding-bottom: 5px; 
+        }
+        .form-group { margin-bottom: 12px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input, select {
+            width: 90%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;
+        }
+        button {
+            background-color: #28a745; color: white; border: none; padding: 10px; 
+            border-radius: 4px; font-size: 15px; width: 100%; margin-top: 5px;
+        }
+        .list-item {
+            background: #e9ecef; padding: 10px; border-radius: 4px; margin-bottom: 8px; font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h2>Admin Dashboard</h2>
+        <p>Training Management System</p>
+    </div>
+
+    <div class="card">
+        <h3>Create New Training</h3>
+        <form>
+            <div class="form-group">
+                <label>Training Title</label>
+                <input type="text" placeholder="e.g., Python Basics" required>
+            </div>
+            <div class="form-group">
+                <label>Assign Trainer</label>
+                <select>
+                    <option>Trainer - Suresh Kumar</option>
+                    <option>Trainer - Anitha Reddy</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Start Date</label>
+                <input type="date" required>
+            </div>
+            <button type="button">Add Training Course</button>
+        </form>
+    </div>
+
+    <div class="card">
+        <h3>Active Trainings List</h3>
+        <div class="list-item">
+            <strong>1. Web Development</strong> - Trainer: Suresh | Date: 12-06-2026
+        </div>
+        <div class="list-item">
+            <strong>2. Python Programming</strong> - Trainer: Anitha | Date: 18-06-2026
+        </div>
+    </div>
+
+</body>    <div style="text-align: center; margin-top: 20px;">
+        <button type="button" onclick="window.location.href='login.html'" style="background-color: #dc3545; max-width: 200px;">Logout</button>
+    </div>
+
+</html>
