@@ -70,26 +70,20 @@
                     <option value="participant">Participant</option>
                 </select>
             </div>
-            <!-- ఇక్కడ మనం లాగిన్ ఫంక్షన్‌ను లింక్ చేశాం -->
             <button type="button" onclick="loginUser()">Login</button>
         </form>
     </div>
 
     <script>
         function loginUser() {
-            // యూజర్ సెలెక్ట్ చేసిన రోల్ ని తీసుకుంటుంది
-            var role = document.getElementById("role").value;
-            
-            if (role === "admin") {
-                window.location.href = "admin.html";
-            } else if (role === "trainer") {
-                window.location.href = "trainer.html";
-            } else if (role === "participant") {
-                window.location.href = "participant.html";
-            }
+    var role = document.getElementById("role").value;
+    
+    if (role === "admin") {
+        window.location.href = "Admin.html";
+    } else if (role === "trainer") {
+        window.location.href = "Trainer.html";
+    } else if (role === "participant") {
+        window.location.href = "Participant.html";
+    }
         }
-    </script>
-
-</body>
-</html>
-
+        
